@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estils.css' %}">
+    <title>Classificació LLiga Fake</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Posició</th>
+            <th>Equip</th>
+            <th>Punts</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for equip in classificacio %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ equip.1 }}</td>
+            <td>{{ equip.0 }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>      
+</body>
+</html>
