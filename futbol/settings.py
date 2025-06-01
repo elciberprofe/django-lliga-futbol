@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Fa referència al CSS de la classificació
+# Fa referència al CSS del selector de lliga i la classificació
 STATIC_URL = '/static/'
 
 # Application definition

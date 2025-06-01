@@ -22,5 +22,6 @@ from lliga import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('classificacio', views.classificacio_menu),
-    path('classificacio/<int:lliga_id>/', views.classificacio)
+    path('classificacio/<int:lliga_id>/', views.classificacio, name='classificacio'),
+    path('crea_equip', views.crea_equip),
 ]
